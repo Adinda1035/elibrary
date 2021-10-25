@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ijo"
+    tools:context=".Tambah_Data_Peminjaman"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/ijo_tua"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_back_button"
+            android:id="@+id/bt_back"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textColor="@color/ijo_muda"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="23sp"
+            android:text="Tambah Data Peminjam Baru"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_height="35dp"
+            android:layout_width="35dp"
+            android:src="@drawable/ic_buku"
+            android:id="@+id/imgBuku"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama anggota :"
+            android:textColor="@color/ijo_tua"
+            android:padding="10dp"
+            android:textSize="18dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Masukkan nama"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#B1ACAC"
+            android:background="@drawable/input"
+            android:padding="10dp"
+            android:textColor="#6A6767"
+            android:id="@+id/tv_nama"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Judul buku :"
+            android:textColor="@color/ijo_tua"
+            android:padding="10dp"
+            android:textSize="18dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Masukkan judul buku"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#B1ACAC"
+            android:background="@drawable/input"
+            android:padding="10dp"
+            android:textColor="#6A6767"
+            android:id="@+id/tv_buku"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Tanggal peminjaman :"
+            android:textColor="@color/ijo_tua"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:id="@+id/et_tglPinjam"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#B1ACAC"
+            android:background="@drawable/input"
+            android:padding="10dp"
+            android:textColor="#6A6767"
+            android:id="@+id/tv_tglPinjam"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="14dp"
+            android:text="Tanggal pengembalian :"
+            android:textColor="@color/ijo_tua"
+            android:padding="10dp"
+            android:textSize="18dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#B1ACAC"
+            android:background="@drawable/input"
+            android:padding="10dp"
+            android:textColor="#6A6767"
+            android:id="@+id/et_tglKembali"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Status :"
+                android:textColor="@color/ijo_tua"
+                android:padding="10dp"
+                android:textSize="18dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#B1ACAC"
+                android:background="@drawable/input"
+                android:padding="10dp"
+                android:textColor="#6A6767"
+                android:id="@+id/tv_status"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button"
+            android:text="Buku sudah dikembalikan"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textColor="@color/ijo_muda"
+            android:layout_gravity="center"
+            android:id="@+id/bt_ubahStatus"/>
+
+        <!--        <androidx.appcompat.widget.AppCompatButton-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="35dp"-->
+        <!--            android:background="@drawable/button"-->
+        <!--            android:text="Buku sudah dikembalikan"-->
+        <!--            android:textColor="@color/ijo_muda"-->
+        <!--            android:id="@+id/bt_kembali"/>-->
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

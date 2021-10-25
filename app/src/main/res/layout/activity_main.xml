@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ijo"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/ijo_tua"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textColor="@color/ijo_muda"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="23sp"
+            android:text="E-Library"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_height="35dp"
+            android:layout_width="35dp"
+            android:src="@drawable/ic_buku"
+            android:id="@+id/imgSync"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/users">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/list"
+                android:layout_gravity="center"
+                android:id="@+id/bt_listPinjam"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daftar Peminjaman"
+                android:textColor="@color/ijo_muda"
+                android:gravity="center"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/users">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/users"
+                android:layout_gravity="center"
+                android:id="@+id/bt_listAnggota"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daftar Anggota"
+                android:textColor="@color/ijo_muda"
+                android:gravity="center"/>
+        </FrameLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
+
