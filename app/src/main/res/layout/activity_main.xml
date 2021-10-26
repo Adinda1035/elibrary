@@ -5,82 +5,106 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/ijo"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/ijo_muda">
 
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:orientation="horizontal"
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:gravity="center_vertical"
-        android:background="@color/ijo_tua"
-        android:padding="16dp">
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_height="wrap_content"
-            android:layout_width="0dp"
-            android:textColor="@color/ijo_muda"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:textSize="23sp"
-            android:text="E-Library"
-            android:layout_weight="1"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="110dp">
 
         <androidx.appcompat.widget.AppCompatImageView
-            android:layout_height="35dp"
-            android:layout_width="35dp"
-            android:src="@drawable/ic_buku"
-            android:id="@+id/imgSync"/>
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_buku" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-Library"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input"
+        android:textColorHint="#4C4B4B"
+        android:layout_marginTop="35dp"
+        android:padding="10dp"
+        android:id="@+id/et_email"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input"
+        android:textColorHint="#4C4B4B"
+        android:layout_marginTop="25dp"
+        android:padding="10dp"
+        android:id="@+id/et_password"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/button"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Log in"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:drawableRight="@drawable/button"
+        android:textSize="20sp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/bt_login"
+        android:gravity="center"/>
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
-        <FrameLayout
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:background="@drawable/button"
-            android:layout_marginBottom="20dp"
-            android:src="@drawable/users">
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/list"
-                android:layout_gravity="center"
-                android:id="@+id/bt_listPinjam"/>
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Daftar Peminjaman"
-                android:textColor="@color/ijo_muda"
-                android:gravity="center"/>
-        </FrameLayout>
-        <FrameLayout
-            android:layout_width="150dp"
-            android:layout_height="100dp"
-            android:background="@drawable/button"
-            android:layout_marginBottom="20dp"
-            android:src="@drawable/users">
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/users"
-                android:layout_gravity="center"
-                android:id="@+id/bt_listAnggota"/>
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Daftar Anggota"
-                android:textColor="@color/ijo_muda"
-                android:gravity="center"/>
-        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have any account?"
+            android:textColor="#000"
+            android:textSize="15sp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/ijo_tua"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:id="@+id/tv_signup"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
-</androidx.appcompat.widget.LinearLayoutCompat>
 
+</androidx.appcompat.widget.LinearLayoutCompat>
