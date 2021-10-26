@@ -12,11 +12,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btLogin.setOnClickListener {
-            startActivity(Intent(this@MainActivity,Home::class.java))
+        binding.btListPinjam.setOnClickListener {
+            startActivity(Intent(this@MainActivity,Tampil_Peminjam::class.java))
         }
-        binding.tvSignup.setOnClickListener {
-            startActivity(Intent(this@MainActivity,Register::class.java))
+
+        binding.btListAnggota.setOnClickListener {
+            startActivity(Intent(this@MainActivity,Tampil_Anggota::class.java))
         }
     }
 }
