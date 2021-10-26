@@ -16,6 +16,8 @@ class Tampil_Peminjam : AppCompatActivity() {
         binding.btBack.setOnClickListener {
             startActivity(Intent(this@Tampil_Peminjam,MainActivity::class.java))
         }
-        binding.btTambahPinjam.setOnClickListener {  }
+        binding.btTambahPinjam.setOnClickListener {
+            startActivity(Intent(this@Tampil_Peminjam,Tambah_Data_Peminjaman::class.java))
+        }
     }
 }
