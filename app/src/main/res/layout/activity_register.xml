@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:orientation="vertical"
+    android:background="@color/ijo_muda">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:background="@color/ijo_tua"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_back_button"
+            android:id="@+id/bt_back"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Your Account"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up and get started"
+        android:textColor="#5E5A5A"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input"
+        android:textColorHint="#4C4B4B"
+        android:layout_marginTop="35dp"
+        android:padding="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input"
+        android:textColorHint="#4C4B4B"
+        android:layout_marginTop="25dp"
+        android:padding="10dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input"
+        android:textColorHint="#4C4B4B"
+        android:layout_marginTop="25dp"
+        android:padding="10dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/button"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:drawableRight="@drawable/button"
+        android:textSize="20sp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:id="@+id/bt_signUp"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
